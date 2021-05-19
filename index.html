@@ -18,12 +18,12 @@
  
 <body>
 	<div class="ui row">
-		<div class="left_side col-6">
+		<div class="left_side col-md-6">
 			<p class="fee">Входной взнос</p>
 			<div class="mode">
 				<img src="./img/logo_chip.png" alt="logo_chip">			
-					<p>5/10 <br>
-					ФЛ Холдем</p>			
+				<p>5/10 <br>
+				ФЛ Холдем</p>			
 			</div>
 			<div class="cash">
 				<p id="cash"></p>
@@ -41,20 +41,25 @@
 				</div>
 			</div>
 			<p id="fee_info">Ваш входной взнос не может быть меньше суммы, с которой вы покинули данный стол. Нажмите кнопку ОК, чтобы продолжить, или подождите, когда пройдет время ограничения.</p>	
-			<input id="fast_buy" class="button" type="submit" value="Быстрая посадка и автодокупка">
-			<img src="./img/quo.png" alt="quotes" id="quo">
-		</div>
-		<div class="right_side col-6">
-			<div class="fast_place">
-				<input type="checkbox" class="custom-checkbox" id="fast_place">
-				<label for="fast_place"></label>
-				<p>Быстрая посадка</p>
-				<div class="info"><span>i</span></div>
+			<div class="fast_buy">
+				<input id="fast_buy" class="button" type="submit" value="Быстрая посадка и автодокупка">
+				<img src="./img/quo.png" alt="">
 			</div>
-			<div class="auto_bet">
-				<p>Автоматически <br> ставить на стол: </p>
-				<input type="number" value="2" min="0" max="5">
-				<p>ББ</p>
+			
+		</div>
+		<div class="right_side col-md-6">
+			<div class="container_fast_place">
+				<div class="fast_place">
+					<input type="checkbox" class="custom-checkbox" id="fast_place">
+					<label for="fast_place"></label>
+					<p>Быстрая посадка</p>
+					<div class="info"><span>i</span></div>
+				</div>
+				<div class="auto_bet">
+					<p>Автоматически <br> ставить на стол: </p>
+					<input type="number" value="2" min="0" max="5">
+					<p>ББ</p>
+				</div>
 			</div>
 			<div class="autobuy_check">
 				<input type="checkbox" class="custom-checkbox" id="auto_buy">
